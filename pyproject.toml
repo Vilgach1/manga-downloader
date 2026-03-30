@@ -1,0 +1,25 @@
+﻿[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manga-downloader"
+version = "0.1.0"
+description = "Interactive CLI downloader for supported manga and webtoon sources."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "questionary>=2.0.1",
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+manga-downloader = "webtoon_dl:main"
+
+[tool.setuptools]
+py-modules = ["webtoon_dl"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
