@@ -1,4 +1,4 @@
-﻿# Manga Downloader
+# Manga Downloader
 
 Terminal downloader for manga, manhwa, and webtoon chapters from:
 
